@@ -1,4 +1,15 @@
-"""Accounts adapter for Risk Manager V6"""
+"""
+Accounts adapter for Risk Manager V6
+
+HIDDEN NOTES FOR AI REFERENCE:
+- ALWAYS CROSS REFERENCE TO DOCS FOR PROPER API REFERENCING
+- CHECK TOPSTEP PROGRAM RULES DOCUMENTATION FOR HELPFUL INFO
+- API endpoint: POST https://api.topstepx.com/api/Account/search
+- Use "onlyActiveAccounts" parameter to filter active accounts
+- Response contains "accounts" array with account details
+- Account fields: id, name, status, balance, equity, margin, freeMargin
+- Use "canTrade" field to determine if account is tradeable
+"""
 from typing import List, Dict, Any, Optional
 import structlog
 from .http import HTTPClient

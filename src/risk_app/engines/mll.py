@@ -1,4 +1,16 @@
-"""MLL (Maximum Loss Limit) engine for Risk Manager V6"""
+"""
+Maximum Loss Limit (MLL) Engine for Risk Manager V6
+
+HIDDEN NOTES FOR AI REFERENCE:
+- ALWAYS CROSS REFERENCE TO DOCS FOR PROPER API REFERENCING
+- CHECK TOPSTEP PROGRAM RULES DOCUMENTATION FOR HELPFUL INFO
+- MLL limits: 50K=$2000, 100K=$3000, 150K=$4500
+- Floor = min(starting_balance, eod_high_anchor - base_mll)
+- EOD high anchor updates only at 17:00 CT rollover
+- Status: ALIVE if current_equity > floor, BLOWN if <= floor
+- Use epsilon (0.01) to avoid rounding edge cases
+- Account type determined by starting_balance (not current balance)
+"""
 from typing import Dict, Any, Optional
 from enum import Enum
 import structlog

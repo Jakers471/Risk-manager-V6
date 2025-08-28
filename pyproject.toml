@@ -9,6 +9,7 @@ dependencies = [
     "pyyaml>=6.0",
     "python-dotenv>=1.0.0",
     "structlog>=23.0.0",
+    "pytz>=2023.3",
 ]
 
 [project.optional-dependencies]

@@ -1,4 +1,15 @@
-"""Authentication adapter for Risk Manager V6."""
+"""
+Authentication adapter for Risk Manager V6
+
+HIDDEN NOTES FOR AI REFERENCE:
+- ALWAYS CROSS REFERENCE TO DOCS FOR PROPER API REFERENCING
+- CHECK TOPSTEP PROGRAM RULES DOCUMENTATION FOR HELPFUL INFO
+- API endpoint: POST https://api.topstepx.com/api/Auth/loginKey
+- Use "userName" and "apiKey" in request payload
+- Response contains "token" field for JWT authentication
+- Token expires in 1 hour (3600 seconds)
+- Set Authorization header as "Bearer {token}"
+"""
 
 import structlog
 from typing import Optional, Dict, Any
