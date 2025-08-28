@@ -1,0 +1,19 @@
+# Account Starting Balances Configuration
+# Add new accounts here as you get them
+# Format: account_name: starting_balance
+
+accounts:
+  # Current accounts
+  "S1AUG1515431533": 50000
+  "PRACTICEAUG2615462661": 150000
+  
+  # Template for new accounts (uncomment and modify as needed)
+  # "NEW_ACCOUNT_NAME": 50000    # 50K account
+  # "NEW_ACCOUNT_NAME": 100000   # 100K account  
+  # "NEW_ACCOUNT_NAME": 150000   # 150K account
+
+# Account type mappings for reference
+account_types:
+  50000: "50K"
+  100000: "100K" 
+  150000: "150K"

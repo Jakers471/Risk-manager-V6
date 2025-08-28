@@ -101,6 +101,7 @@ def main():
                     eod_high_anchor = anchors_store.get_eod_high_anchor(account.id)
                     current_equity = account.display_equity
                     
+                    # Calculate MLL
                     mll_result = mll_engine.calculate_mll(
                         account_id=account.id,
                         starting_balance=starting_balance,
