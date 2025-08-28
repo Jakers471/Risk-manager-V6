@@ -1,0 +1,15 @@
+# Risk Manager Config
+api:
+  base_url: "https://api.topstepx.com"
+  auth_endpoint: "/api/Auth/loginKey"
+  timeout: 30
+  max_retries: 3
+
+auth:
+  token_refresh_margin_minutes: 2
+  session_timeout_minutes: 60
+
+logging:
+  level: "INFO"
+  format: "json"
+

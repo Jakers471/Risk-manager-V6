@@ -1,0 +1,18 @@
+{
+  "10645103": {
+    "account_id": 10645103,
+    "starting_balance": 50000,
+    "eod_high_anchor": 50217.4,
+    "intraday_high_today": null,
+    "last_rollover_date": null,
+    "locked_out": false
+  },
+  "11016190": {
+    "account_id": 11016190,
+    "starting_balance": 150000,
+    "eod_high_anchor": 151298.4,
+    "intraday_high_today": null,
+    "last_rollover_date": null,
+    "locked_out": false
+  }
+}
